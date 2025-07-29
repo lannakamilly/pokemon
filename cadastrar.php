@@ -42,10 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Pokémon</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="cadastrar.css">
-
-=======
     <style>
         /* Reset */
         * {
@@ -177,16 +173,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             background: #1f4e79;
         }
     </style>
->>>>>>> 7e36c76c10d885858d217fa3a4609bf51eca9e8f
 </head>
 
 <body>
-<<<<<<< HEAD
-    <img src="uploads/bg-cadastro.jpg" class="bg-cadastro-img" alt="Cubone de fundo"/>
-    <h2 class="title">Cadastrar Pokémon</h2>
-    
-    <form action="" method="POST" enctype="multipart/form-data" class="glass-card">
-=======
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -208,7 +197,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <div class="form-container">
     <form action="" method="POST" enctype="multipart/form-data">
         <h2>Cadastrar Pokémon</h2>
->>>>>>> 7e36c76c10d885858d217fa3a4609bf51eca9e8f
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="text" name="tipo" placeholder="Tipo" required>
         <input type="text" name="localizacao" placeholder="Localização">
@@ -220,8 +208,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="file" name="foto" accept="image/*">
         <button type="submit">Cadastrar</button>
     </form>
-<<<<<<< HEAD
-=======
 </div>
 
 <script>
@@ -229,7 +215,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     document.getElementById('nav-links').classList.toggle('active');
   }
 </script>
->>>>>>> 7e36c76c10d885858d217fa3a4609bf51eca9e8f
 
 </body>
 

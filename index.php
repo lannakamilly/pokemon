@@ -149,7 +149,7 @@
     /* Título com brilho */
     h1 {
       font-size: 3rem;
-      color: #3498db;
+      color:#feca02;
       text-shadow: 3px 3px 0 #000, 6px 6px 0 rgba(0,0,0,0.3);
       margin-bottom: 15px;
       animation: glow 2s infinite alternate;
