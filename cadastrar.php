@@ -15,7 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $foto = null;
     if (!empty($_FILES['foto']['name'])) {
         $pasta = "uploads/";
-        if (!is_dir($pasta)) mkdir($pasta);
+        if (!is_dir($pasta))
+            mkdir($pasta);
         $foto = $pasta . basename($_FILES["foto"]["name"]);
         move_uploaded_file($_FILES["foto"]["tmp_name"], $foto);
     }
@@ -38,20 +39,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Pokémon</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
-        form { background: #fff; padding: 20px; border-radius: 8px; width: 400px; margin: auto; }
-        input, textarea, select { width: 100%; margin-bottom: 10px; padding: 8px; }
-        button { padding: 10px; background: #4CAF50; color: #fff; border: none; cursor: pointer; }
-        button:hover { background: #45a049; }
-    </style>
+    <link rel="stylesheet" href="cadastrar.css">
+
 </head>
+
 <body>
-    <h2>Cadastrar Pokémon</h2>
-    <form action="" method="POST" enctype="multipart/form-data">
+    <img src="uploads/bg-cadastro.jpg" class="bg-cadastro-img" alt="Cubone de fundo"/>
+    <h2 class="title">Cadastrar Pokémon</h2>
+    
+    <form action="" method="POST" enctype="multipart/form-data" class="glass-card">
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="text" name="tipo" placeholder="Tipo" required>
         <input type="text" name="localizacao" placeholder="Localização">
@@ -63,5 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="file" name="foto" accept="image/*">
         <button type="submit">Cadastrar</button>
     </form>
+
 </body>
+
 </html>
